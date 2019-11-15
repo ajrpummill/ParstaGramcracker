@@ -17,13 +17,17 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [PFObject]()
+    let myRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        DataRequest.addAcceptableImageContentTypes(["apllication/octet-stream"])
+        DataRequest.addAcceptableImageContentTypes(["application/octet-stream"])
         tableView.delegate = self
         tableView.dataSource = self
+        myRefreshControl.addTarget(self, action: (#selector(viewDidAppear(_:))), for: .valueChanged)
+        tableView.refreshControl = myRefreshControl
+       
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,8 +40,9 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
            let user = post["author"] as! PFUser
            cell.usernameLabel.text = user.username
            cell.captionLabel.text = (post["caption"] as! String)
+          
            
-        let imageFile = post["image"] as! PFFileObject
+           let imageFile = post["image"] as! PFFileObject
            let urlString = imageFile.url!
            let url = URL(string: urlString)!
            cell.photoView.af_setImage(withURL: url)
@@ -51,15 +56,17 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
         query.limit = 20
+        query.order(byDescending: "createdAt")
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
                 self.tableView.reloadData()
+                self.myRefreshControl.endRefreshing()
             }
         }
     }
     
-   
+    
     /*
     // MARK: - Navigation
 
