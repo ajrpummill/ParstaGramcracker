@@ -23,5 +23,6 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-Launch Screen
+Launch Screen 
+
 <img src='https://media.giphy.com/media/f8c9LtpQlnTHXP5wWD/giphy.gif' />
