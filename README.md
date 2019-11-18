@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://gfycat.com/ThirdUnripeBichonfrise' />
+<img src='https://thumbs.gfycat.com/ThirdUnripeBichonfrise-mobile.mp4' />
 
 # Parstagram - Part I
 
