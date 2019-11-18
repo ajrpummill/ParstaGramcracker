@@ -22,7 +22,8 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://s5.gifyu.com/images/Part_2.gif' />
+
+<img src='https://media.giphy.com/media/fSY044IclBp6pxoyLZ/giphy.gif' />
 
 # Parstagram - Part I
 
