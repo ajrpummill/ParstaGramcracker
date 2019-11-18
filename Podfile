@@ -8,6 +8,7 @@ target 'ParstaGramcracker' do
   # Pods for ParstaGramcracker
   pod "Parse"
   pod "AlamofireImage"
+  pod "MessageInputBar"
 
   target 'ParstaGramcrackerTests' do
     inherit! :search_paths

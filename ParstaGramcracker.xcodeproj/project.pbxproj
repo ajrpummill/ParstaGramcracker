@@ -20,6 +20,7 @@
 		ED95D14323785B890025C5CC /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95D14223785B880025C5CC /* loginViewController.swift */; };
 		ED95D14523785BAF0025C5CC /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95D14423785BAF0025C5CC /* feedViewController.swift */; };
 		EDA4AE162379C70700E54D12 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4AE152379C70700E54D12 /* PostCell.swift */; };
+		EDBEAD372380B944009F00EB /* commentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBEAD362380B944009F00EB /* commentCell.swift */; };
 		FDEA436E4AC1F97D2C4EA5BC /* Pods_ParstaGramcracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F581ADF694D483BB4ABE3AE /* Pods_ParstaGramcracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		ED95D14223785B880025C5CC /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		ED95D14423785BAF0025C5CC /* feedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
 		EDA4AE152379C70700E54D12 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		EDBEAD362380B944009F00EB /* commentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				ED95D14423785BAF0025C5CC /* feedViewController.swift */,
 				ED8075B52378793E00848A0E /* cameraViewController.swift */,
 				EDA4AE152379C70700E54D12 /* PostCell.swift */,
+				EDBEAD362380B944009F00EB /* commentCell.swift */,
 			);
 			path = ParstaGramcracker;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED2F5DA823784D9B00168006 /* AppDelegate.swift in Sources */,
+				EDBEAD372380B944009F00EB /* commentCell.swift in Sources */,
 				ED2F5DAA23784D9B00168006 /* SceneDelegate.swift in Sources */,
 				ED8075B62378793E00848A0E /* cameraViewController.swift in Sources */,
 				ED95D14523785BAF0025C5CC /* feedViewController.swift in Sources */,
